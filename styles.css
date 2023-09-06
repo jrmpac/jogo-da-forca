@@ -1,0 +1,106 @@
+body{    
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #0c0107;
+    color: #dadada;
+
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* * {
+    outline: 1px solid red;
+}*/
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    
+    padding: 1rem;
+}
+
+.imagem-forca {
+    align-self: center;
+
+    width: 300px;
+    height: 400px;
+
+    border: 1px solid #136125;
+    border-radius: 20px;
+
+    background-color: #136125;
+}
+
+.contador-letras {
+    margin: 0;
+
+    font-weight: 600;
+}
+
+.grid-palavra {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    place-items: center;
+
+    gap: 5px;
+}
+
+.grid-palavra > p {
+    padding: 8px 15px;
+
+    border: 2px solid #136125;
+    border-radius: 10px;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.grid-teclado {
+    display: grid;
+    grid-template-columns: repeat(10, 35px);
+
+    gap: 2.2px;
+}
+
+.grid-teclado > button {
+    height: 35px;
+
+    border-radius: 5px;
+    border: none;
+}
+
+.grid-teclado > button:hover {
+    background-color: transparent;
+    color: #00ff3c;
+    font-weight: 800;
+}
+
+.btn-reset {
+    grid-column: 3 span;
+}
+
+.notificacao-acerto {
+    display: grid;
+    place-items: center;
+
+    padding: 10px;
+
+    border: 1px solid #136125;
+    border-radius: 10px;
+}
+
+.notificacao-erro {
+    border: 1px solid #d34343;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+  
+    padding: 10px;
+  }
